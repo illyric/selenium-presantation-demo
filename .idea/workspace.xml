@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d95934a1-7205-4a13-a014-0f02ad040d61" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\i.kosumi\Desktop\temp\selenium-webdriver\.idea\libraries\Maven__commons_codec_commons_codec_1_9.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/GoogleSearchTest.class" afterPath="$PROJECT_DIR$/target/test-classes/GoogleSearchTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/GoogleSearchTest.java" afterPath="$PROJECT_DIR$/src/test/java/GoogleSearchTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/selenium-webdriver.iml" afterPath="$PROJECT_DIR$/selenium-webdriver.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="selenium-webdriver.iws" />
@@ -43,12 +41,12 @@
       <file leaf-file-name="GoogleSearchTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/GoogleSearchTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09388971">
-              <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.561848">
+              <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1840#1989#0" expanded="true" />
-                <element signature="e#1988#1989#0" expanded="true" />
+                <element signature="e#2041#2190#0" expanded="true" />
+                <element signature="e#2189#2190#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -556,12 +554,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GoogleSearchTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09388971">
-          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.561848">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1840#1989#0" expanded="true" />
-            <element signature="e#1988#1989#0" expanded="true" />
+            <element signature="e#2041#2190#0" expanded="true" />
+            <element signature="e#2189#2190#0" expanded="true" />
           </folding>
         </state>
       </provider>

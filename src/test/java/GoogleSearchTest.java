@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -11,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 import static org.testng.Assert.*;
 
 public class GoogleSearchTest {
+	private WebDriver ffDriver = null;
 
 	public static final String GOOGLE_HOMEPAGE = "http://www.google.com/";
 	public static final String MISSPELLED_SEARCH = "the Google search engin";
@@ -23,12 +26,22 @@ public class GoogleSearchTest {
 	public static final String GOOGLE_SIDEBAR_TITLE_CSS_SELECTOR = "div.kno-ecr-pt";
 	public static final int IMPLICIT_TIMEOUT_IN_SECONDS = 10;
 
-	@Test
-	public void googleGoole() {
-		//create a Firefox instance of the WebDriver interface
-		WebDriver ffDriver = new FirefoxDriver();
+	@BeforeTest
+	public void setUp() {
+		//initialize firefox
+		ffDriver = new FirefoxDriver();
 		//managing timeouts
 		ffDriver.manage().timeouts().implicitlyWait(IMPLICIT_TIMEOUT_IN_SECONDS, TimeUnit.SECONDS);
+	}
+
+	@AfterTest
+	public void tearDown() {
+		//quit browser session
+		ffDriver.quit();
+	}
+
+	@Test
+	public void googleGoole() {
 		//navigate to Google
 		ffDriver.get(GOOGLE_HOMEPAGE);
 		//get a reference to the search box
@@ -55,8 +68,6 @@ public class GoogleSearchTest {
 		assertEquals(ffDriver.findElements(By.cssSelector(WIKIPEDIA_CSS_SELECTOR)).get(0).getText(), WIKIPEDIA_HIT);
 		//Check right sidebar for a brief description of Google
 		assertEquals(ffDriver.findElement(By.cssSelector(GOOGLE_SIDEBAR_TITLE_CSS_SELECTOR)).getText(), GOOGLE_SIDEBAR_TITLE);
-		//quit browser session
-		ffDriver.quit();
 	}
 
 }
